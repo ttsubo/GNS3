@@ -1,0 +1,1838 @@
+{
+    "auto_start": false,
+    "name": "case0_full_ospf_topology",
+    "project_id": "e471d071-d58b-4c2a-b3ee-82a0b67393ae",
+    "resources_type": "local",
+    "revision": 3,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from CE1 port FastEthernet1/1 to SW1 port 1",
+                "destination_node_id": 1,
+                "destination_port_id": 83,
+                "id": 1,
+                "source_node_id": 2,
+                "source_port_id": 26
+            },
+            {
+                "description": "Link from CE1 port FastEthernet1/0 to PE1 port FastEthernet1/0",
+                "destination_node_id": 3,
+                "destination_port_id": 51,
+                "id": 2,
+                "source_node_id": 2,
+                "source_port_id": 25
+            },
+            {
+                "description": "Link from ASBR3 port FastEthernet1/0 to P1 port FastEthernet1/1",
+                "destination_node_id": 5,
+                "destination_port_id": 40,
+                "id": 3,
+                "source_node_id": 4,
+                "source_port_id": 1
+            },
+            {
+                "description": "Link from P1 port FastEthernet1/0 to PE1 port FastEthernet1/1",
+                "destination_node_id": 3,
+                "destination_port_id": 52,
+                "id": 4,
+                "source_node_id": 5,
+                "source_port_id": 39
+            },
+            {
+                "description": "Link from CE2 port FastEthernet1/1 to SW2 port 1",
+                "destination_node_id": 6,
+                "destination_port_id": 84,
+                "id": 5,
+                "source_node_id": 7,
+                "source_port_id": 30
+            },
+            {
+                "description": "Link from CE2 port FastEthernet1/0 to PE2 port FastEthernet1/0",
+                "destination_node_id": 8,
+                "destination_port_id": 57,
+                "id": 6,
+                "source_node_id": 7,
+                "source_port_id": 29
+            },
+            {
+                "description": "Link from PE1 port FastEthernet2/0 to PE2 port FastEthernet2/0",
+                "destination_node_id": 8,
+                "destination_port_id": 59,
+                "id": 7,
+                "source_node_id": 3,
+                "source_port_id": 53
+            },
+            {
+                "description": "Link from ASBR3 port FastEthernet1/1 to ASBR4 port FastEthernet1/1",
+                "destination_node_id": 9,
+                "destination_port_id": 8,
+                "id": 8,
+                "source_node_id": 4,
+                "source_port_id": 2
+            },
+            {
+                "description": "Link from ASBR4 port FastEthernet1/0 to P2 port FastEthernet1/1",
+                "destination_node_id": 10,
+                "destination_port_id": 46,
+                "id": 9,
+                "source_node_id": 9,
+                "source_port_id": 7
+            },
+            {
+                "description": "Link from P1 port FastEthernet2/0 to P2 port FastEthernet2/0",
+                "destination_node_id": 10,
+                "destination_port_id": 47,
+                "id": 10,
+                "source_node_id": 5,
+                "source_port_id": 41
+            },
+            {
+                "description": "Link from P2 port FastEthernet1/0 to PE2 port FastEthernet1/1",
+                "destination_node_id": 8,
+                "destination_port_id": 58,
+                "id": 11,
+                "source_node_id": 10,
+                "source_port_id": 45
+            },
+            {
+                "description": "Link from ASBR3 port FastEthernet2/0 to ASBR5 port FastEthernet1/0",
+                "destination_node_id": 11,
+                "destination_port_id": 13,
+                "id": 12,
+                "source_node_id": 4,
+                "source_port_id": 3
+            },
+            {
+                "description": "Link from ASBR5 port FastEthernet1/1 to PE7 port FastEthernet1/0",
+                "destination_node_id": 12,
+                "destination_port_id": 63,
+                "id": 13,
+                "source_node_id": 11,
+                "source_port_id": 14
+            },
+            {
+                "description": "Link from ASBR4 port FastEthernet2/0 to ASBR6 port FastEthernet1/0",
+                "destination_node_id": 14,
+                "destination_port_id": 19,
+                "id": 14,
+                "source_node_id": 9,
+                "source_port_id": 9
+            },
+            {
+                "description": "Link from ASBR5 port FastEthernet2/1 to ASBR6 port FastEthernet1/1",
+                "destination_node_id": 14,
+                "destination_port_id": 20,
+                "id": 15,
+                "source_node_id": 11,
+                "source_port_id": 16
+            },
+            {
+                "description": "Link from CE3 port FastEthernet1/0 to PE7 port FastEthernet2/0",
+                "destination_node_id": 12,
+                "destination_port_id": 65,
+                "id": 16,
+                "source_node_id": 15,
+                "source_port_id": 33
+            },
+            {
+                "description": "Link from CE3 port FastEthernet2/0 to SW3 port 1",
+                "destination_node_id": 13,
+                "destination_port_id": 85,
+                "id": 17,
+                "source_node_id": 15,
+                "source_port_id": 35
+            },
+            {
+                "description": "Link from P1 port FastEthernet2/1 to RR1 port FastEthernet1/0",
+                "destination_node_id": 17,
+                "destination_port_id": 75,
+                "id": 18,
+                "source_node_id": 5,
+                "source_port_id": 42
+            },
+            {
+                "description": "Link from ASBR5 port FastEthernet2/0 to RR2 port FastEthernet1/0",
+                "destination_node_id": 18,
+                "destination_port_id": 79,
+                "id": 19,
+                "source_node_id": 11,
+                "source_port_id": 15
+            },
+            {
+                "description": "Link from ASBR6 port FastEthernet2/0 to PE8 port FastEthernet1/0",
+                "destination_node_id": 16,
+                "destination_port_id": 69,
+                "id": 20,
+                "source_node_id": 14,
+                "source_port_id": 21
+            },
+            {
+                "description": "Link from PE7 port FastEthernet1/1 to PE8 port FastEthernet1/1",
+                "destination_node_id": 16,
+                "destination_port_id": 70,
+                "id": 21,
+                "source_node_id": 12,
+                "source_port_id": 64
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Ethernet switch",
+                "device_id": "c8fca8a8-09e2-4d01-8029-2af7c30b99a9",
+                "id": 1,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW1",
+                    "x": 15.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to CE1 on port FastEthernet1/1",
+                        "id": 83,
+                        "link_id": 1,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW1"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -603.5,
+                "y": -182.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 2,
+                "id": 2,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "CE1",
+                    "x": 15.0,
+                    "y": -21.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 27,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE1 on port FastEthernet1/0",
+                        "id": 25,
+                        "link_id": 2,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW1 on port 1",
+                        "id": 26,
+                        "link_id": 1,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2104,
+                    "console": 2000,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca02.34a9.0000",
+                    "name": "CE1",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i2_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "0e414d24-4547-46b9-8933-b94b24c628ba",
+                "x": -465.0,
+                "y": -186.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 3,
+                "id": 3,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PE1",
+                    "x": 19.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 55,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to PE2 on port FastEthernet2/0",
+                        "id": 53,
+                        "link_id": 7,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 54,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to CE1 on port FastEthernet1/0",
+                        "id": 51,
+                        "link_id": 2,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to P1 on port FastEthernet1/0",
+                        "id": 52,
+                        "link_id": 4,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2105,
+                    "console": 2001,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca03.3493.0000",
+                    "name": "PE1",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i3_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "417a2792-6522-4244-a56d-b73c93bd5874",
+                "x": -343.0,
+                "y": -102.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 4,
+                "id": 4,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "ASBR3",
+                    "x": 19.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 5,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to ASBR5 on port FastEthernet1/0",
+                        "id": 3,
+                        "link_id": 12,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 4,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to P1 on port FastEthernet1/1",
+                        "id": 1,
+                        "link_id": 3,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR4 on port FastEthernet1/1",
+                        "id": 2,
+                        "link_id": 8,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2107,
+                    "console": 2003,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca04.34a1.0000",
+                    "name": "ASBR3",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i4_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "a09b1541-af30-4dad-a0dd-decc46df36ab",
+                "x": -64.0,
+                "y": -101.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 5,
+                "id": 5,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "P1",
+                    "x": 3.5,
+                    "y": -28.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 43,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to P2 on port FastEthernet2/0",
+                        "id": 41,
+                        "link_id": 10,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to RR1 on port FastEthernet1/0",
+                        "id": 42,
+                        "link_id": 18,
+                        "name": "FastEthernet2/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE1 on port FastEthernet1/1",
+                        "id": 39,
+                        "link_id": 4,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR3 on port FastEthernet1/0",
+                        "id": 40,
+                        "link_id": 3,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2106,
+                    "console": 2002,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca05.34b0.0000",
+                    "name": "P1",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i5_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "b9541463-7c57-4f7a-ae03-a96119697885",
+                "x": -205.0,
+                "y": -100.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "b61fd210-b081-44f1-a7aa-31785ed6be6b",
+                "id": 6,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW2",
+                    "x": 11.5,
+                    "y": 33.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to CE2 on port FastEthernet1/1",
+                        "id": 84,
+                        "link_id": 5,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW2"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -594.5,
+                "y": 128.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 7,
+                "id": 7,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "CE2",
+                    "x": 18.0,
+                    "y": 44.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 31,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE2 on port FastEthernet1/0",
+                        "id": 29,
+                        "link_id": 6,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW2 on port 1",
+                        "id": 30,
+                        "link_id": 5,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2100,
+                    "console": 2004,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca07.34f0.0000",
+                    "name": "CE2",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i7_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "eb4afd40-7228-47db-8de4-b913ae73993d",
+                "x": -460.0,
+                "y": 120.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 8,
+                "id": 8,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PE2",
+                    "x": 16.5,
+                    "y": 44.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 61,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to PE1 on port FastEthernet2/0",
+                        "id": 59,
+                        "link_id": 7,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 60,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to CE2 on port FastEthernet1/0",
+                        "id": 57,
+                        "link_id": 6,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to P2 on port FastEthernet1/0",
+                        "id": 58,
+                        "link_id": 11,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2101,
+                    "console": 2005,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca08.3501.0000",
+                    "name": "PE2",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i8_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "128cb9e1-dc5c-4379-9ef2-9b1f4b845776",
+                "x": -344.0,
+                "y": 31.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 9,
+                "id": 9,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "ASBR4",
+                    "x": 3.5,
+                    "y": 47.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 11,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to ASBR6 on port FastEthernet1/0",
+                        "id": 9,
+                        "link_id": 14,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 10,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to P2 on port FastEthernet1/1",
+                        "id": 7,
+                        "link_id": 9,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR3 on port FastEthernet1/1",
+                        "id": 8,
+                        "link_id": 8,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2103,
+                    "console": 2007,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca09.3510.0000",
+                    "name": "ASBR4",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i9_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "f9e4e316-9964-4e07-8270-817db66f1a39",
+                "x": -65.0,
+                "y": 31.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 10,
+                "id": 10,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "P2",
+                    "x": 22.5,
+                    "y": 44.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 49,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to P1 on port FastEthernet2/0",
+                        "id": 47,
+                        "link_id": 10,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 48,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE2 on port FastEthernet1/1",
+                        "id": 45,
+                        "link_id": 11,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR4 on port FastEthernet1/0",
+                        "id": 46,
+                        "link_id": 9,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2102,
+                    "console": 2006,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca0a.351e.0000",
+                    "name": "P2",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i10_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "c71bee68-68fd-4752-8af7-67d52650fc98",
+                "x": -206.0,
+                "y": 31.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 11,
+                "id": 11,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "ASBR5",
+                    "x": -14.5,
+                    "y": -21.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 17,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to RR2 on port FastEthernet1/0",
+                        "id": 15,
+                        "link_id": 19,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to ASBR6 on port FastEthernet1/1",
+                        "id": 16,
+                        "link_id": 15,
+                        "name": "FastEthernet2/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR3 on port FastEthernet2/0",
+                        "id": 13,
+                        "link_id": 12,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE7 on port FastEthernet1/0",
+                        "id": 14,
+                        "link_id": 13,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2111,
+                    "console": 2008,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca0b.352d.0000",
+                    "name": "ASBR5",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i11_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "ea4f16f1-35db-4e06-b7f8-5e49276d6ff3",
+                "x": 115.0,
+                "y": -101.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 12,
+                "id": 12,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PE7",
+                    "x": 19.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 67,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to CE3 on port FastEthernet1/0",
+                        "id": 65,
+                        "link_id": 16,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 66,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR5 on port FastEthernet1/1",
+                        "id": 63,
+                        "link_id": 13,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE8 on port FastEthernet1/1",
+                        "id": 64,
+                        "link_id": 21,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2112,
+                    "console": 2009,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca0c.353d.0000",
+                    "name": "PE7",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i12_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "0a0c2fd1-f32f-469c-9bfe-e7e0df9fa8e8",
+                "x": 266.0,
+                "y": -102.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "e6abe20c-7bdd-4bac-8b48-07979ff14d6a",
+                "id": 13,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW3",
+                    "x": 15.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to CE3 on port FastEthernet2/0",
+                        "id": 85,
+                        "link_id": 17,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW3"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": 527.5,
+                "y": 25.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 14,
+                "id": 14,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "ASBR6",
+                    "x": 9.5,
+                    "y": 46.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 23,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to PE8 on port FastEthernet1/0",
+                        "id": 21,
+                        "link_id": 20,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 22,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR4 on port FastEthernet2/0",
+                        "id": 19,
+                        "link_id": 14,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR5 on port FastEthernet2/1",
+                        "id": 20,
+                        "link_id": 15,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2114,
+                    "console": 2011,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca0e.355b.0000",
+                    "name": "ASBR6",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i14_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "2bd39c29-0463-46ff-a1b7-80b3e4c399cc",
+                "x": 114.0,
+                "y": 32.4142135624
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 15,
+                "id": 15,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "CE3",
+                    "x": 20.0,
+                    "y": -22.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 37,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to SW3 on port 1",
+                        "id": 35,
+                        "link_id": 17,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 36,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE7 on port FastEthernet2/0",
+                        "id": 33,
+                        "link_id": 16,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 34,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2113,
+                    "console": 2010,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca0f.3569.0000",
+                    "name": "CE3",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i15_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "ec68011e-8606-4577-ab2e-9907238caa36",
+                "x": 407.0,
+                "y": 16.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 16,
+                "id": 16,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PE8",
+                    "x": 21.5,
+                    "y": 47.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 73,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 71,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 72,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR6 on port FastEthernet2/0",
+                        "id": 69,
+                        "link_id": 20,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PE7 on port FastEthernet1/1",
+                        "id": 70,
+                        "link_id": 21,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2109,
+                    "console": 2012,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca10.3579.0000",
+                    "name": "PE8",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i16_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "77257091-427a-44b7-993d-b90e6969b8ec",
+                "x": 266.0,
+                "y": 31.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 17,
+                "id": 17,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "RR1",
+                    "x": 19.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 77,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to P1 on port FastEthernet2/1",
+                        "id": 75,
+                        "link_id": 18,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 76,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2108,
+                    "console": 2013,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca11.3587.0000",
+                    "name": "RR1",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i17_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "19acd3ce-43ad-44f7-a860-6690474254a8",
+                "x": -198.0,
+                "y": -213.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 18,
+                "id": 18,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "RR2",
+                    "x": 19.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 81,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ASBR5 on port FastEthernet2/0",
+                        "id": 79,
+                        "link_id": 19,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 80,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "aux": 2110,
+                    "console": 2014,
+                    "idlepc": "0x62f10b70",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca12.3595.0000",
+                    "name": "RR2",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i18_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "3ae4cbb4-5b18-423c-bcfa-e66c126b5aa9",
+                "x": 141.0,
+                "y": -212.0
+            }
+        ],
+        "notes": [
+            {
+                "color": "#005500",
+                "font": "MS UI Gothic,18,-1,5,75,0,0,0,0,0",
+                "text": "AS65002",
+                "x": -550.0,
+                "y": 33.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -280.0,
+                "y": 27.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 154.0,
+                "y": 1.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.100.2.0/30",
+                "x": 170.0,
+                "y": 64.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.1.1",
+                "x": 118.0,
+                "y": -82.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -87.0,
+                "y": -102.5
+            },
+            {
+                "color": "#ff00ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 86.0,
+                "y": 27.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -61.0,
+                "y": -48.5
+            },
+            {
+                "color": "#005500",
+                "font": "MS UI Gothic,18,-1,5,75,0,0,0,0,0",
+                "text": "AS65000",
+                "x": 219.0,
+                "y": -224.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -307.0,
+                "y": -49.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 181.0,
+                "y": -104.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.103.0/30",
+                "x": 323.0,
+                "y": -45.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.201.1/24",
+                "x": -603.0,
+                "y": -151.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.100.5.0/30",
+                "x": 128.0,
+                "y": -145.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -397.0,
+                "y": -158.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.102.0/30",
+                "x": -457.0,
+                "y": 84.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.1.2",
+                "x": 269.0,
+                "y": -82.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -139.0,
+                "y": 24.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 273.0,
+                "y": -52.5
+            },
+            {
+                "color": "#005500",
+                "font": "MS UI Gothic,18,-1,5,75,0,0,0,0,0",
+                "text": "AS9598",
+                "x": -322.0,
+                "y": -224.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -61.0,
+                "y": 1.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.1",
+                "x": -345.0,
+                "y": -81.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.202.1/24",
+                "x": -593.0,
+                "y": 106.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 167.0,
+                "y": -125.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -166.0,
+                "y": -51.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -137.0,
+                "y": -102.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -229.0,
+                "y": -103.5
+            },
+            {
+                "color": "#ff007f",
+                "font": "MS UI Gothic,14,-1,5,75,0,0,0,0,0",
+                "text": "192.168.1.0/30",
+                "x": -12.0,
+                "y": 71.5
+            },
+            {
+                "color": "#ff00ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 86.0,
+                "y": -104.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.8.0/30",
+                "x": -215.0,
+                "y": -144.5
+            },
+            {
+                "color": "#ff00ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 13.0,
+                "y": -104.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -371.0,
+                "y": -106.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.101.0/30",
+                "x": -461.0,
+                "y": -134.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -85.0,
+                "y": 26.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -227.0,
+                "y": 27.5
+            },
+            {
+                "color": "#005500",
+                "font": "MS UI Gothic,18,-1,5,75,0,0,0,0,0",
+                "text": "AS65001",
+                "x": -555.0,
+                "y": -250.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 183.0,
+                "y": 26.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.100.1.0/30",
+                "x": 171.0,
+                "y": -71.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.5.0/30",
+                "x": -364.0,
+                "y": -24.5
+            },
+            {
+                "color": "#005500",
+                "font": "MS UI Gothic,18,-1,5,75,0,0,0,0,0",
+                "text": "AS65003",
+                "x": 463.0,
+                "y": -66.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.6",
+                "x": -61.0,
+                "y": 50.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.203.1/24",
+                "x": 448.0,
+                "y": 56.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -160.0,
+                "y": -170.5
+            },
+            {
+                "color": "#ff00ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 14.0,
+                "y": 26.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.1.4",
+                "x": 270.0,
+                "y": 49.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.2.0/30",
+                "x": -151.0,
+                "y": -67.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 336.0,
+                "y": -93.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.10.10.3",
+                "x": 405.0,
+                "y": 31.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 378.0,
+                "y": 20.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.3",
+                "x": -61.0,
+                "y": -81.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 176.0,
+                "y": -164.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -306.0,
+                "y": 2.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -166.0,
+                "y": 0.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.10.10.2",
+                "x": -466.0,
+                "y": 136.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -163.0,
+                "y": -127.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -392.0,
+                "y": 116.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.1.0/30",
+                "x": -293.0,
+                "y": -70.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.100.3.0/30",
+                "x": 91.0,
+                "y": -25.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.3.0/30",
+                "x": -289.0,
+                "y": 62.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.10.10.1",
+                "x": -472.0,
+                "y": -166.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 241.0,
+                "y": -103.5
+            },
+            {
+                "color": "#3c3c3c",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -364.0,
+                "y": 52.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.4.0/30",
+                "x": -149.0,
+                "y": 65.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 244.0,
+                "y": 27.5
+            },
+            {
+                "color": "#ff007f",
+                "font": "MS UI Gothic,14,-1,5,75,0,0,0,0,0",
+                "text": "192.168.0.0/30",
+                "x": -22.0,
+                "y": -61.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.1.5",
+                "x": 144.0,
+                "y": -191.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.4",
+                "x": -341.0,
+                "y": 47.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.1.3",
+                "x": 119.0,
+                "y": 51.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 153.0,
+                "y": -53.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -278.0,
+                "y": -104.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.6.0/30",
+                "x": -222.0,
+                "y": -22.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.100.4.0/30",
+                "x": 246.0,
+                "y": -23.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.2",
+                "x": -202.0,
+                "y": -81.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.7",
+                "x": -197.414213562,
+                "y": -192.5
+            },
+            {
+                "color": "#ffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.5",
+                "x": -203.0,
+                "y": 49.5
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "172.16.7.0/30",
+                "x": -78.0,
+                "y": -22.5
+            },
+            {
+                "color": "#5500ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 272.0,
+                "y": 1.5
+            }
+        ],
+        "rectangles": [
+            {
+                "border_style": 0,
+                "color": "#eaeaea",
+                "height": 174.0,
+                "width": 242.0,
+                "x": -608.0,
+                "y": 23.0,
+                "z": -2.0
+            },
+            {
+                "border_style": 0,
+                "color": "#ffff7f",
+                "height": 336.0,
+                "width": 189.0,
+                "x": 135.0,
+                "y": -233.0,
+                "z": -2.0
+            },
+            {
+                "border_style": 0,
+                "color": "#eaeaea",
+                "height": 174.0,
+                "width": 245.0,
+                "x": -614.0,
+                "y": -255.0,
+                "z": -2.0
+            },
+            {
+                "border_style": 0,
+                "color": "#ffff7f",
+                "height": 340.0,
+                "width": 311.0,
+                "x": -333.0,
+                "y": -233.0,
+                "z": -2.0
+            },
+            {
+                "border_style": 0,
+                "color": "#eaeaea",
+                "height": 174.0,
+                "width": 245.0,
+                "x": 367.0,
+                "y": -65.0,
+                "z": -2.0
+            }
+        ],
+        "servers": [
+            {
+                "cloud": false,
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 8000
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.3.1"
+}

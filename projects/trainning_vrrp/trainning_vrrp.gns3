@@ -1,0 +1,471 @@
+{
+    "auto_start": false,
+    "name": "trainning_vrrp",
+    "project_id": "7db2b795-33ac-4103-8174-d1747bbff42c",
+    "resources_type": "local",
+    "revision": 3,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from R1 port FastEthernet1/1 to SW2 port 1",
+                "destination_node_id": 1,
+                "destination_port_id": 23,
+                "id": 1,
+                "source_node_id": 2,
+                "source_port_id": 2
+            },
+            {
+                "description": "Link from R4 port FastEthernet1/0 to SW2 port 3",
+                "destination_node_id": 1,
+                "destination_port_id": 25,
+                "id": 2,
+                "source_node_id": 5,
+                "source_port_id": 15
+            },
+            {
+                "description": "Link from R2 port FastEthernet1/1 to SW2 port 2",
+                "destination_node_id": 1,
+                "destination_port_id": 24,
+                "id": 3,
+                "source_node_id": 3,
+                "source_port_id": 6
+            },
+            {
+                "description": "Link from R1 port FastEthernet1/0 to R3 port FastEthernet1/1",
+                "destination_node_id": 4,
+                "destination_port_id": 10,
+                "id": 4,
+                "source_node_id": 2,
+                "source_port_id": 1
+            },
+            {
+                "description": "Link from R2 port FastEthernet1/0 to R3 port FastEthernet2/0",
+                "destination_node_id": 4,
+                "destination_port_id": 11,
+                "id": 5,
+                "source_node_id": 3,
+                "source_port_id": 5
+            },
+            {
+                "description": "Link from R3 port FastEthernet1/0 to R5 port FastEthernet1/0",
+                "destination_node_id": 6,
+                "destination_port_id": 19,
+                "id": 6,
+                "source_node_id": 4,
+                "source_port_id": 9
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Ethernet switch",
+                "device_id": "b4306570-ba6f-4995-a9e5-c3d49fa04d1a",
+                "id": 1,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW2",
+                    "x": 71.734375,
+                    "y": 4.0
+                },
+                "ports": [
+                    {
+                        "id": 23,
+                        "name": "1",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 24,
+                        "name": "2",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 25,
+                        "name": "3",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW2"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -262.5,
+                "y": -52.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 2,
+                "id": 2,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1",
+                    "x": -30.5078125,
+                    "y": 16.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 3,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 1,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 2,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "console": 2000,
+                    "idlepc": "0x6056d984",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca02.2375.0000",
+                    "name": "R1",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i2_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "dffbaaab-474f-48b4-9e20-3d49c4a5d54f",
+                "x": -392.0,
+                "y": -137.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 3,
+                "id": 3,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2",
+                    "x": 72.9921875,
+                    "y": 12.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 7,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 5,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 6,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "console": 2001,
+                    "idlepc": "0x6056d984",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca03.2383.0000",
+                    "name": "R2",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i3_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "cbc91aca-4f86-4b48-b257-0ae1a02b2c5f",
+                "x": -123.0,
+                "y": -137.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 4,
+                "id": 4,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R3",
+                    "x": -28.5078125,
+                    "y": -5.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 13,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 9,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 10,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 11,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 12,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "console": 2002,
+                    "idlepc": "0x6056d984",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca04.2391.0000",
+                    "name": "R3",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "startup_config": "configs/i4_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "830aaf86-7f64-4c20-9cc4-2ed545eefe3a",
+                "x": -264.0,
+                "y": -227.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 5,
+                "id": 5,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R4",
+                    "x": 20.9921875,
+                    "y": 49.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 17,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 15,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 16,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "console": 2003,
+                    "idlepc": "0x6056d984",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca05.239f.0000",
+                    "name": "R4",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i5_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "0a77f9fc-662b-49df-8cd3-a440e4b99a89",
+                "x": -256.0,
+                "y": 55.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 6,
+                "id": 6,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R5",
+                    "x": 70.9921875,
+                    "y": 9.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 21,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 19,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 20,
+                        "name": "FastEthernet1/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "console": 2005,
+                    "idlepc": "0x6056d984",
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca06.23ad.0000",
+                    "name": "R5",
+                    "slot1": "PA-2FE-TX",
+                    "startup_config": "configs/i6_startup-config.cfg"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "f0d841c0-d58f-4261-bb3b-888563b1d1c5",
+                "x": -264.0,
+                "y": -322.0
+            }
+        ],
+        "notes": [
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.3.0/24",
+                "x": -169.0,
+                "y": -192.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.2.0/24",
+                "x": -400.0,
+                "y": -190.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -129.0,
+                "y": -94.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -345.0,
+                "y": -90.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.2/32",
+                "x": -135.0,
+                "y": -124.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -193.0,
+                "y": -205.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.1/32",
+                "x": -398.0,
+                "y": -125.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.100.0/24",
+                "x": -221.0,
+                "y": -263.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.3/32",
+                "x": -269.0,
+                "y": -220.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".100",
+                "x": -215.0,
+                "y": 32.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -254.0,
+                "y": -279.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.1.0/24",
+                "x": -282.0,
+                "y": -85.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -254.0,
+                "y": -249.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -347.0,
+                "y": -157.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -133.0,
+                "y": -164.0
+            },
+            {
+                "color": "#0000ff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -286.0,
+                "y": -205.0
+            }
+        ],
+        "servers": [
+            {
+                "cloud": false,
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 8000
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.3.1"
+}
