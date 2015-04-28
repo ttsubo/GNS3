@@ -1,1 +1,0 @@
-qemu-system-x86_64: -net udp,vlan=1,name=gns3-1,sport=10002,dport=10001,daddr=127.0.0.1: Invalid parameter 'udp'
