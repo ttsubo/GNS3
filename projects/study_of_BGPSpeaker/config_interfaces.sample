@@ -1,0 +1,27 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+up ip link add name veth0_a type veth peer name veth0_b
+up ip link set up veth0_a
+up ip link set up veth0_b
+
+
+
+auto eth1
+iface eth1 inet dhcp
+
+auto br11
+iface br11 inet static
+        address 172.16.20.100
+        network 172.16.20.0
+        netmask 255.255.255.0
+        broadcast 172.16.20.255
+        bridge_ports eth0
+        bridge_ports veth0_a
+        bridge_stp off
+        bridge_fd 0
+        bridge_maxwait 0
+
