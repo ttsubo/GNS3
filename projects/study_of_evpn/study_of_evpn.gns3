@@ -7,20 +7,20 @@
     "topology": {
         "links": [
             {
-                "description": "Link from PE1 port Ethernet2 to P1 port FastEthernet1/0",
-                "destination_node_id": 6,
-                "destination_port_id": 27,
-                "id": 1,
-                "source_node_id": 21,
-                "source_port_id": 322
-            },
-            {
                 "description": "Link from CE3 port FastEthernet1/1 to HUB2 port 1",
                 "destination_node_id": 11,
                 "destination_port_id": 54,
-                "id": 2,
+                "id": 1,
                 "source_node_id": 10,
                 "source_port_id": 51
+            },
+            {
+                "description": "Link from SW2 port 3 to CE5 port FastEthernet1/0",
+                "destination_node_id": 86,
+                "destination_port_id": 664,
+                "id": 2,
+                "source_node_id": 66,
+                "source_port_id": 676
             },
             {
                 "description": "Link from CE1 port FastEthernet1/1 to HUB1 port 1",
@@ -39,18 +39,26 @@
                 "source_port_id": 583
             },
             {
-                "description": "Link from CE2 port FastEthernet1/1 to HUB3 port 1",
-                "destination_node_id": 17,
-                "destination_port_id": 130,
+                "description": "Link from PE1 port Ethernet2 to P1 port FastEthernet1/0",
+                "destination_node_id": 6,
+                "destination_port_id": 27,
                 "id": 5,
-                "source_node_id": 78,
-                "source_port_id": 655
+                "source_node_id": 21,
+                "source_port_id": 322
+            },
+            {
+                "description": "Link from PE1 port Ethernet3 to PE3 port Ethernet3",
+                "destination_node_id": 22,
+                "destination_port_id": 327,
+                "id": 6,
+                "source_node_id": 21,
+                "source_port_id": 323
             },
             {
                 "description": "Link from PE2 port Ethernet3 to SW2 port 1",
                 "destination_node_id": 66,
                 "destination_port_id": 582,
-                "id": 6,
+                "id": 7,
                 "source_node_id": 23,
                 "source_port_id": 331
             },
@@ -58,15 +66,23 @@
                 "description": "Link from P1 port FastEthernet1/1 to PE2 port Ethernet1",
                 "destination_node_id": 23,
                 "destination_port_id": 329,
-                "id": 7,
+                "id": 8,
                 "source_node_id": 6,
                 "source_port_id": 28
+            },
+            {
+                "description": "Link from CE2 port FastEthernet1/1 to HUB3 port 1",
+                "destination_node_id": 17,
+                "destination_port_id": 130,
+                "id": 9,
+                "source_node_id": 78,
+                "source_port_id": 655
             },
             {
                 "description": "Link from P2 port FastEthernet1/1 to PE2 port Ethernet2",
                 "destination_node_id": 23,
                 "destination_port_id": 330,
-                "id": 8,
+                "id": 10,
                 "source_node_id": 79,
                 "source_port_id": 660
             },
@@ -74,23 +90,15 @@
                 "description": "Link from P1 port FastEthernet2/0 to P2 port FastEthernet2/0",
                 "destination_node_id": 79,
                 "destination_port_id": 661,
-                "id": 9,
+                "id": 11,
                 "source_node_id": 6,
                 "source_port_id": 29
-            },
-            {
-                "description": "Link from PE1 port Ethernet3 to PE3 port Ethernet3",
-                "destination_node_id": 22,
-                "destination_port_id": 327,
-                "id": 10,
-                "source_node_id": 21,
-                "source_port_id": 323
             },
             {
                 "description": "Link from PE3 port Ethernet2 to P2 port FastEthernet1/0",
                 "destination_node_id": 79,
                 "destination_port_id": 659,
-                "id": 11,
+                "id": 12,
                 "source_node_id": 22,
                 "source_port_id": 326
             },
@@ -98,7 +106,7 @@
                 "description": "Link from PE1 port Ethernet1 to SW1 port 1",
                 "destination_node_id": 29,
                 "destination_port_id": 361,
-                "id": 12,
+                "id": 13,
                 "source_node_id": 21,
                 "source_port_id": 321
             },
@@ -106,7 +114,7 @@
                 "description": "Link from SW1 port 2 to CE1 port FastEthernet1/0",
                 "destination_node_id": 1,
                 "destination_port_id": 2,
-                "id": 13,
+                "id": 14,
                 "source_node_id": 29,
                 "source_port_id": 378
             },
@@ -114,7 +122,7 @@
                 "description": "Link from SW3 port 1 to PE3 port Ethernet1",
                 "destination_node_id": 22,
                 "destination_port_id": 325,
-                "id": 14,
+                "id": 15,
                 "source_node_id": 31,
                 "source_port_id": 379
             },
@@ -122,9 +130,33 @@
                 "description": "Link from SW3 port 2 to CE3 port FastEthernet1/0",
                 "destination_node_id": 10,
                 "destination_port_id": 50,
-                "id": 15,
+                "id": 16,
                 "source_node_id": 31,
                 "source_port_id": 380
+            },
+            {
+                "description": "Link from CE4 port FastEthernet1/0 to SW1 port 3",
+                "destination_node_id": 29,
+                "destination_port_id": 690,
+                "id": 17,
+                "source_node_id": 88,
+                "source_port_id": 678
+            },
+            {
+                "description": "Link from HUB5 port 1 to CE4 port FastEthernet1/1",
+                "destination_node_id": 88,
+                "destination_port_id": 679,
+                "id": 18,
+                "source_node_id": 89,
+                "source_port_id": 682
+            },
+            {
+                "description": "Link from CE5 port FastEthernet1/1 to HUB4 port 1",
+                "destination_node_id": 87,
+                "destination_port_id": 668,
+                "id": 19,
+                "source_node_id": 86,
+                "source_port_id": 665
             }
         ],
         "nodes": [
@@ -153,10 +185,16 @@
                         "port_number": 1
                     },
                     {
+                        "adapter_number": 0,
+                        "id": 1,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 1,
                         "description": "connected to SW1 on port 2",
                         "id": 2,
-                        "link_id": 13,
+                        "link_id": 14,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -169,12 +207,6 @@
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -217,7 +249,7 @@
                 "type": "C7200",
                 "vm_id": "50daff5e-fcbf-4ca3-a936-4168e8e2533b",
                 "x": -414.59797974644664,
-                "y": -104.97056274847714
+                "y": -105.97056274847714
             },
             {
                 "description": "Ethernet switch",
@@ -234,12 +266,12 @@
                     {
                         "description": "connected to PE2 on port Ethernet3",
                         "id": 582,
-                        "link_id": 6,
+                        "link_id": 7,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
                         "type": "dot1q",
-                        "vlan": 100
+                        "vlan": 1
                     },
                     {
                         "description": "connected to CE2 on port FastEthernet1/0",
@@ -249,7 +281,17 @@
                         "nio": "NIO_UDP",
                         "port_number": 2,
                         "type": "access",
-                        "vlan": 1
+                        "vlan": 2001
+                    },
+                    {
+                        "description": "connected to CE5 on port FastEthernet1/0",
+                        "id": 676,
+                        "link_id": 2,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 2002
                     }
                 ],
                 "properties": {
@@ -259,6 +301,96 @@
                 "type": "EthernetSwitch",
                 "x": 318.0533905932738,
                 "y": -83.88225099390854
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 4,
+                "id": 86,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "CE5",
+                    "x": 15.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 2,
+                        "id": 666,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 667,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 663,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW2 on port 3",
+                        "id": 664,
+                        "link_id": 2,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to HUB4 on port 1",
+                        "id": 665,
+                        "link_id": 19,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "clock_divisor": 4,
+                    "console": 2008,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x62f114b0",
+                    "idlesleep": 30,
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca04.0a85.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "CE5",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-FE",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i4_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "3b623b84-3d2f-498b-aa2b-5d34333eb120",
+                "x": 428.03362133362884,
+                "y": 59.19595949289331
             },
             {
                 "description": "Router c7200",
@@ -276,7 +408,7 @@
                         "adapter_number": 2,
                         "description": "connected to P2 on port FastEthernet2/0",
                         "id": 29,
-                        "link_id": 9,
+                        "link_id": 11,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -288,10 +420,16 @@
                         "port_number": 1
                     },
                     {
+                        "adapter_number": 0,
+                        "id": 26,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 1,
                         "description": "connected to PE1 on port Ethernet2",
                         "id": 27,
-                        "link_id": 1,
+                        "link_id": 5,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -300,16 +438,10 @@
                         "adapter_number": 1,
                         "description": "connected to PE2 on port Ethernet1",
                         "id": 28,
-                        "link_id": 7,
+                        "link_id": 8,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 26,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -319,7 +451,7 @@
                     "disk1": 0,
                     "exec_area": 64,
                     "idlemax": 500,
-                    "idlepc": "0x62f114b0",
+                    "idlepc": "0x62f12f74",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.S3.image",
                     "mac_addr": "ca05.1f28.0000",
@@ -443,10 +575,16 @@
                         "port_number": 1
                     },
                     {
+                        "adapter_number": 0,
+                        "id": 49,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 1,
                         "description": "connected to SW3 on port 2",
                         "id": 50,
-                        "link_id": 15,
+                        "link_id": 16,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -455,16 +593,10 @@
                         "adapter_number": 1,
                         "description": "connected to HUB2 on port 1",
                         "id": 51,
-                        "link_id": 2,
+                        "link_id": 1,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 49,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -506,8 +638,8 @@
                 "server_id": 1,
                 "type": "C7200",
                 "vm_id": "1d8ca0c7-313d-4181-8abc-bd4ff80b005c",
-                "x": -413.5979797464465,
-                "y": 32.89949493661166
+                "x": -420.669047558312,
+                "y": 175.7350647362942
             },
             {
                 "description": "Ethernet hub",
@@ -524,7 +656,7 @@
                     {
                         "description": "connected to CE3 on port FastEthernet1/1",
                         "id": 54,
-                        "link_id": 2,
+                        "link_id": 1,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -570,8 +702,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetHub",
-                "x": -559.2253967444163,
-                "y": 40.72792206135783
+                "x": -564.8822509939089,
+                "y": 183.56349186104043
             },
             {
                 "description": "Router c7200",
@@ -598,6 +730,12 @@
                         "port_number": 1
                     },
                     {
+                        "adapter_number": 0,
+                        "id": 653,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 1,
                         "description": "connected to SW2 on port 2",
                         "id": 654,
@@ -610,16 +748,10 @@
                         "adapter_number": 1,
                         "description": "connected to HUB3 on port 1",
                         "id": 655,
-                        "link_id": 5,
+                        "link_id": 9,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 653,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -679,7 +811,7 @@
                         "adapter_number": 2,
                         "description": "connected to P1 on port FastEthernet2/0",
                         "id": 661,
-                        "link_id": 9,
+                        "link_id": 11,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -691,10 +823,16 @@
                         "port_number": 1
                     },
                     {
+                        "adapter_number": 0,
+                        "id": 658,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 1,
                         "description": "connected to PE3 on port Ethernet2",
                         "id": 659,
-                        "link_id": 11,
+                        "link_id": 12,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -703,16 +841,10 @@
                         "adapter_number": 1,
                         "description": "connected to PE2 on port Ethernet2",
                         "id": 660,
-                        "link_id": 8,
+                        "link_id": 10,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 658,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -771,7 +903,7 @@
                     {
                         "description": "connected to CE2 on port FastEthernet1/1",
                         "id": 130,
-                        "link_id": 5,
+                        "link_id": 9,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -817,8 +949,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetHub",
-                "x": 540.3797256769669,
-                "y": -74.58073580374355
+                "x": 541.3797256769669,
+                "y": -80.58073580374355
             },
             {
                 "default_symbol": ":/symbols/router.normal.svg",
@@ -843,7 +975,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW1 on port 1",
                         "id": 321,
-                        "link_id": 12,
+                        "link_id": 13,
                         "name": "Ethernet1",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -852,7 +984,7 @@
                         "adapter_number": 2,
                         "description": "connected to P1 on port FastEthernet1/0",
                         "id": 322,
-                        "link_id": 1,
+                        "link_id": 5,
                         "name": "Ethernet2",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -861,7 +993,7 @@
                         "adapter_number": 3,
                         "description": "connected to PE3 on port Ethernet3",
                         "id": 323,
-                        "link_id": 10,
+                        "link_id": 6,
                         "name": "Ethernet3",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -909,7 +1041,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW3 on port 1",
                         "id": 325,
-                        "link_id": 14,
+                        "link_id": 15,
                         "name": "Ethernet1",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -918,7 +1050,7 @@
                         "adapter_number": 2,
                         "description": "connected to P2 on port FastEthernet1/0",
                         "id": 326,
-                        "link_id": 11,
+                        "link_id": 12,
                         "name": "Ethernet2",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -927,7 +1059,7 @@
                         "adapter_number": 3,
                         "description": "connected to PE1 on port Ethernet3",
                         "id": 327,
-                        "link_id": 10,
+                        "link_id": 6,
                         "name": "Ethernet3",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -949,8 +1081,8 @@
                 "server_id": 1,
                 "type": "QemuVM",
                 "vm_id": "3dce865d-dbb4-4973-ab02-dc0d84ae3709",
-                "x": -189.9777054234135,
-                "y": 26.083261120685208
+                "x": -189.97770542341354,
+                "y": 24.669047558312116
             },
             {
                 "default_symbol": ":/symbols/router.normal.svg",
@@ -975,7 +1107,7 @@
                         "adapter_number": 1,
                         "description": "connected to P1 on port FastEthernet1/1",
                         "id": 329,
-                        "link_id": 7,
+                        "link_id": 8,
                         "name": "Ethernet1",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -984,7 +1116,7 @@
                         "adapter_number": 2,
                         "description": "connected to P2 on port FastEthernet1/1",
                         "id": 330,
-                        "link_id": 8,
+                        "link_id": 10,
                         "name": "Ethernet2",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -993,7 +1125,7 @@
                         "adapter_number": 3,
                         "description": "connected to SW2 on port 1",
                         "id": 331,
-                        "link_id": 6,
+                        "link_id": 7,
                         "name": "Ethernet3",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1019,6 +1151,224 @@
                 "y": -84.22539674441617
             },
             {
+                "description": "Router c7200",
+                "dynamips_id": 6,
+                "id": 88,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "CE4",
+                    "x": 15.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 2,
+                        "id": 680,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 681,
+                        "name": "FastEthernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 677,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW1 on port 3",
+                        "id": 678,
+                        "link_id": 17,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to HUB5 on port 1",
+                        "id": 679,
+                        "link_id": 18,
+                        "name": "FastEthernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "clock_divisor": 4,
+                    "console": 2010,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x62f114b0",
+                    "idlesleep": 30,
+                    "image": "c7200-adventerprisek9-mz.152-4.S3.image",
+                    "mac_addr": "ca06.0aa6.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "CE4",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-FE",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i6_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "9f6ddb37-91cf-4c1e-a037-2abe7406d8f1",
+                "x": -424.7371567773474,
+                "y": 27.49747468305832
+            },
+            {
+                "description": "Ethernet hub",
+                "device_id": "6e92e075-e1cc-470c-aeab-49a1b2363d72",
+                "id": 89,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "HUB5",
+                    "x": 12.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to CE4 on port FastEthernet1/1",
+                        "id": 682,
+                        "link_id": 18,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "id": 683,
+                        "name": "2",
+                        "port_number": 2
+                    },
+                    {
+                        "id": 684,
+                        "name": "3",
+                        "port_number": 3
+                    },
+                    {
+                        "id": 685,
+                        "name": "4",
+                        "port_number": 4
+                    },
+                    {
+                        "id": 686,
+                        "name": "5",
+                        "port_number": 5
+                    },
+                    {
+                        "id": 687,
+                        "name": "6",
+                        "port_number": 6
+                    },
+                    {
+                        "id": 688,
+                        "name": "7",
+                        "port_number": 7
+                    },
+                    {
+                        "id": 689,
+                        "name": "8",
+                        "port_number": 8
+                    }
+                ],
+                "properties": {
+                    "name": "HUB5"
+                },
+                "server_id": 1,
+                "type": "EthernetHub",
+                "x": -567.7442994522835,
+                "y": 33.49747468305832
+            },
+            {
+                "description": "Ethernet hub",
+                "device_id": "f826c3ef-e07c-417f-a95f-d9420c25e511",
+                "id": 87,
+                "label": {
+                    "color": "#000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "HUB4",
+                    "x": 12.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to CE5 on port FastEthernet1/1",
+                        "id": 668,
+                        "link_id": 19,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "id": 669,
+                        "name": "2",
+                        "port_number": 2
+                    },
+                    {
+                        "id": 670,
+                        "name": "3",
+                        "port_number": 3
+                    },
+                    {
+                        "id": 671,
+                        "name": "4",
+                        "port_number": 4
+                    },
+                    {
+                        "id": 672,
+                        "name": "5",
+                        "port_number": 5
+                    },
+                    {
+                        "id": 673,
+                        "name": "6",
+                        "port_number": 6
+                    },
+                    {
+                        "id": 674,
+                        "name": "7",
+                        "port_number": 7
+                    },
+                    {
+                        "id": 675,
+                        "name": "8",
+                        "port_number": 8
+                    }
+                ],
+                "properties": {
+                    "name": "HUB4"
+                },
+                "server_id": 1,
+                "type": "EthernetHub",
+                "x": 544.6568542494923,
+                "y": 62.21320343559642
+            },
+            {
                 "description": "Ethernet switch",
                 "device_id": "1d80e477-bf49-4ea8-b6f5-c97086299590",
                 "id": 29,
@@ -1033,22 +1383,32 @@
                     {
                         "description": "connected to PE1 on port Ethernet1",
                         "id": 361,
-                        "link_id": 12,
+                        "link_id": 13,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
                         "type": "dot1q",
-                        "vlan": 100
+                        "vlan": 1
                     },
                     {
                         "description": "connected to CE1 on port FastEthernet1/0",
                         "id": 378,
-                        "link_id": 13,
+                        "link_id": 14,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
                         "type": "access",
-                        "vlan": 1
+                        "vlan": 1001
+                    },
+                    {
+                        "description": "connected to CE4 on port FastEthernet1/0",
+                        "id": 690,
+                        "link_id": 17,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1002
                     }
                 ],
                 "properties": {
@@ -1074,22 +1434,22 @@
                     {
                         "description": "connected to PE3 on port Ethernet1",
                         "id": 379,
-                        "link_id": 14,
+                        "link_id": 15,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
                         "type": "dot1q",
-                        "vlan": 100
+                        "vlan": 1
                     },
                     {
                         "description": "connected to CE3 on port FastEthernet1/0",
                         "id": 380,
-                        "link_id": 15,
+                        "link_id": 16,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
                         "type": "access",
-                        "vlan": 1
+                        "vlan": 3001
                     }
                 ],
                 "properties": {
@@ -1097,8 +1457,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -299.9579361637688,
-                "y": 33.497474683058314
+                "x": -297.1295090390227,
+                "y": 92.89444430272832
             }
         ],
         "notes": [
@@ -1113,8 +1473,8 @@
                 "color": "#0000ff",
                 "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
                 "text": "192.168.101.1/24",
-                "x": -502.26197667087536,
-                "y": -61.9020202535533
+                "x": -471.9898987322332,
+                "y": -64.9020202535533
             },
             {
                 "color": "#0000ff",
@@ -1127,29 +1487,8 @@
                 "color": "#0000ff",
                 "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
                 "text": "192.168.101.3/24",
-                "x": -508.333044482741,
-                "y": 78.96803743153545
-            },
-            {
-                "color": "#0000ff",
-                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
-                "text": "192.168.203.0/24",
-                "x": -553.4680374315355,
-                "y": -8.039105243400956
-            },
-            {
-                "color": "#0000ff",
-                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
-                "text": "192.168.201.0/24",
-                "x": -552.6396103067893,
-                "y": -145.74264068711926
-            },
-            {
-                "color": "#0000ff",
-                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
-                "text": "172.16.3.0/30",
-                "x": -123.72792206135786,
-                "y": 54.09797974644666
+                "x": -505.50461735799473,
+                "y": 221.8036072312181
             },
             {
                 "color": "#0000ff",
@@ -1161,23 +1500,16 @@
             {
                 "color": "#0000ff",
                 "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
-                "text": "192.168.203.0/24",
-                "x": 456.92893218813447,
-                "y": -131.25230867899737
-            },
-            {
-                "color": "#0000ff",
-                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
                 "text": "192.168.101.2/24",
-                "x": 431.4213562373097,
-                "y": -43.37510831897219
+                "x": 404.42135623730974,
+                "y": -47.375108318972195
             },
             {
                 "color": "#ff0000",
                 "font": "Ubuntu,20,-1,5,75,0,0,0,0,0",
                 "text": "AS:65000",
-                "x": -136.97770542341354,
-                "y": -150.80613254815975
+                "x": -53.53910524340093,
+                "y": -169.19090885901002
             },
             {
                 "color": "#0000ff",
@@ -1190,12 +1522,63 @@
                 "color": "#0000ff",
                 "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
                 "text": "172.16.6.0/30",
-                "x": -18.249783362055638,
-                "y": -23.695959492893316
+                "x": -33.80613254815968,
+                "y": -20.867532368147128
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "172.16.101.2/24",
+                "x": 404.42135623730974,
+                "y": 97.59545442950497
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "172.16.101.1/24",
+                "x": -465.14336111300634,
+                "y": 70.99747468305827
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "192.168.201.1/24",
+                "x": -606.9898987322331,
+                "y": -11.902020253553296
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "192.168.201.1/24",
+                "x": -603.9898987322331,
+                "y": -143.9020202535533
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "192.168.202.1/24",
+                "x": 526.0101012677669,
+                "y": -128.9020202535533
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "192.168.202.1/24",
+                "x": 526.0101012677669,
+                "y": 14.097979746446697
+            },
+            {
+                "color": "#0000ff",
+                "font": "Cantarell,12,-1,5,75,0,0,0,0,0",
+                "text": "192.168.203.1/24",
+                "x": -610.8599564173218,
+                "y": 132.07063453597686
             }
         ],
         "rectangles": [
             {
+                "border_style": 0,
+                "color": "#ffff7f",
                 "height": 122.6274169979695,
                 "width": 212.1320343559642,
                 "x": -560.0285706997455,
@@ -1203,23 +1586,46 @@
                 "z": -1.0
             },
             {
-                "height": 122.6274169979695,
-                "width": 207.68838354206827,
-                "x": -558.4133470105958,
-                "y": -12.526911934581179,
-                "z": -1.0
-            },
-            {
+                "border_style": 0,
+                "color": "#ffff7f",
                 "height": 127.2792206135785,
                 "width": 192.92893218813447,
-                "x": 425.90786310082376,
-                "y": -142.8355697996826
+                "x": 421.90786310082376,
+                "y": -139.83556979968262
             },
             {
+                "border_style": 0,
                 "height": 262.8427124746189,
                 "width": 465.0752518939714,
                 "x": -192.1320343559641,
                 "y": -153.94826817189062,
+                "z": -1.0
+            },
+            {
+                "border_style": 0,
+                "color": "#aaff7f",
+                "height": 127.2792206135785,
+                "width": 192.92893218813447,
+                "x": 420.90786310082376,
+                "y": -0.8355697996826166,
+                "z": -1.0
+            },
+            {
+                "border_style": 0,
+                "color": "#aaff7f",
+                "height": 122.6274169979695,
+                "width": 212.1320343559642,
+                "x": -565.4844148224613,
+                "y": -12.526911934581143,
+                "z": -1.0
+            },
+            {
+                "border_style": 0,
+                "color": "#ffff7f",
+                "height": 122.6274169979695,
+                "width": 212.1320343559642,
+                "x": -571.1412690719536,
+                "y": 128.89444430272835,
                 "z": -1.0
             }
         ],
