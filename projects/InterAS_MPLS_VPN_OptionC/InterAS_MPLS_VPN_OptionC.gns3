@@ -7,26 +7,10 @@
     "topology": {
         "links": [
             {
-                "description": "Link from CE1 port FastEthernet1/1 to SW1 port 1",
-                "destination_node_id": 1,
-                "destination_port_id": 83,
-                "id": 1,
-                "source_node_id": 2,
-                "source_port_id": 26
-            },
-            {
-                "description": "Link from CE1 port FastEthernet1/0 to PE1 port FastEthernet1/0",
-                "destination_node_id": 3,
-                "destination_port_id": 51,
-                "id": 2,
-                "source_node_id": 2,
-                "source_port_id": 25
-            },
-            {
                 "description": "Link from P1 port FastEthernet1/0 to PE1 port FastEthernet1/1",
                 "destination_node_id": 3,
                 "destination_port_id": 52,
-                "id": 3,
+                "id": 1,
                 "source_node_id": 5,
                 "source_port_id": 39
             },
@@ -34,9 +18,25 @@
                 "description": "Link from ASBR3 port FastEthernet1/0 to P1 port FastEthernet1/1",
                 "destination_node_id": 5,
                 "destination_port_id": 40,
-                "id": 4,
+                "id": 2,
                 "source_node_id": 4,
                 "source_port_id": 1
+            },
+            {
+                "description": "Link from CE1 port FastEthernet1/1 to SW1 port 1",
+                "destination_node_id": 1,
+                "destination_port_id": 83,
+                "id": 3,
+                "source_node_id": 2,
+                "source_port_id": 26
+            },
+            {
+                "description": "Link from CE1 port FastEthernet1/0 to PE1 port FastEthernet1/0",
+                "destination_node_id": 3,
+                "destination_port_id": 51,
+                "id": 4,
+                "source_node_id": 2,
+                "source_port_id": 25
             },
             {
                 "description": "Link from CE2 port FastEthernet1/1 to SW2 port 1",
@@ -71,34 +71,10 @@
                 "source_port_id": 2
             },
             {
-                "description": "Link from ASBR4 port FastEthernet1/0 to P2 port FastEthernet1/1",
-                "destination_node_id": 10,
-                "destination_port_id": 46,
-                "id": 9,
-                "source_node_id": 9,
-                "source_port_id": 7
-            },
-            {
-                "description": "Link from P1 port FastEthernet2/0 to P2 port FastEthernet2/0",
-                "destination_node_id": 10,
-                "destination_port_id": 47,
-                "id": 10,
-                "source_node_id": 5,
-                "source_port_id": 41
-            },
-            {
-                "description": "Link from P2 port FastEthernet1/0 to PE2 port FastEthernet1/1",
-                "destination_node_id": 8,
-                "destination_port_id": 58,
-                "id": 11,
-                "source_node_id": 10,
-                "source_port_id": 45
-            },
-            {
                 "description": "Link from ASBR3 port FastEthernet2/0 to ASBR5 port FastEthernet1/0",
                 "destination_node_id": 11,
                 "destination_port_id": 13,
-                "id": 12,
+                "id": 9,
                 "source_node_id": 4,
                 "source_port_id": 3
             },
@@ -106,47 +82,39 @@
                 "description": "Link from ASBR5 port FastEthernet1/1 to PE7 port FastEthernet1/0",
                 "destination_node_id": 12,
                 "destination_port_id": 63,
-                "id": 13,
+                "id": 10,
                 "source_node_id": 11,
                 "source_port_id": 14
             },
             {
-                "description": "Link from ASBR4 port FastEthernet2/0 to ASBR6 port FastEthernet1/0",
-                "destination_node_id": 14,
-                "destination_port_id": 19,
-                "id": 14,
+                "description": "Link from ASBR4 port FastEthernet1/0 to P2 port FastEthernet1/1",
+                "destination_node_id": 10,
+                "destination_port_id": 46,
+                "id": 11,
                 "source_node_id": 9,
-                "source_port_id": 9
+                "source_port_id": 7
             },
             {
-                "description": "Link from ASBR5 port FastEthernet2/1 to ASBR6 port FastEthernet1/1",
-                "destination_node_id": 14,
-                "destination_port_id": 20,
-                "id": 15,
-                "source_node_id": 11,
-                "source_port_id": 16
+                "description": "Link from P1 port FastEthernet2/0 to P2 port FastEthernet2/0",
+                "destination_node_id": 10,
+                "destination_port_id": 47,
+                "id": 12,
+                "source_node_id": 5,
+                "source_port_id": 41
             },
             {
-                "description": "Link from PE7 port FastEthernet1/1 to PE8 port FastEthernet1/1",
-                "destination_node_id": 16,
-                "destination_port_id": 70,
-                "id": 16,
-                "source_node_id": 12,
-                "source_port_id": 64
-            },
-            {
-                "description": "Link from ASBR6 port FastEthernet2/0 to PE8 port FastEthernet1/0",
-                "destination_node_id": 16,
-                "destination_port_id": 69,
-                "id": 17,
-                "source_node_id": 14,
-                "source_port_id": 21
+                "description": "Link from P2 port FastEthernet1/0 to PE2 port FastEthernet1/1",
+                "destination_node_id": 8,
+                "destination_port_id": 58,
+                "id": 13,
+                "source_node_id": 10,
+                "source_port_id": 45
             },
             {
                 "description": "Link from CE3 port FastEthernet1/0 to PE7 port FastEthernet2/0",
                 "destination_node_id": 12,
                 "destination_port_id": 65,
-                "id": 18,
+                "id": 14,
                 "source_node_id": 15,
                 "source_port_id": 33
             },
@@ -154,17 +122,49 @@
                 "description": "Link from CE3 port FastEthernet2/0 to SW3 port 1",
                 "destination_node_id": 13,
                 "destination_port_id": 85,
-                "id": 19,
+                "id": 15,
                 "source_node_id": 15,
                 "source_port_id": 35
+            },
+            {
+                "description": "Link from ASBR4 port FastEthernet2/0 to ASBR6 port FastEthernet1/0",
+                "destination_node_id": 14,
+                "destination_port_id": 19,
+                "id": 16,
+                "source_node_id": 9,
+                "source_port_id": 9
+            },
+            {
+                "description": "Link from ASBR5 port FastEthernet2/1 to ASBR6 port FastEthernet1/1",
+                "destination_node_id": 14,
+                "destination_port_id": 20,
+                "id": 17,
+                "source_node_id": 11,
+                "source_port_id": 16
             },
             {
                 "description": "Link from P1 port FastEthernet2/1 to RR1 port FastEthernet1/0",
                 "destination_node_id": 17,
                 "destination_port_id": 75,
-                "id": 20,
+                "id": 18,
                 "source_node_id": 5,
                 "source_port_id": 42
+            },
+            {
+                "description": "Link from PE7 port FastEthernet1/1 to PE8 port FastEthernet1/1",
+                "destination_node_id": 16,
+                "destination_port_id": 70,
+                "id": 19,
+                "source_node_id": 12,
+                "source_port_id": 64
+            },
+            {
+                "description": "Link from ASBR6 port FastEthernet2/0 to PE8 port FastEthernet1/0",
+                "destination_node_id": 16,
+                "destination_port_id": 69,
+                "id": 20,
+                "source_node_id": 14,
+                "source_port_id": 21
             },
             {
                 "description": "Link from ASBR5 port FastEthernet2/0 to RR2 port FastEthernet1/0",
@@ -191,7 +191,7 @@
                     {
                         "description": "connected to CE1 on port FastEthernet1/1",
                         "id": 83,
-                        "link_id": 1,
+                        "link_id": 3,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -229,7 +229,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE1 on port FastEthernet1/0",
                         "id": 25,
-                        "link_id": 2,
+                        "link_id": 4,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -238,7 +238,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW1 on port 1",
                         "id": 26,
-                        "link_id": 1,
+                        "link_id": 3,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -307,7 +307,7 @@
                         "adapter_number": 1,
                         "description": "connected to CE1 on port FastEthernet1/0",
                         "id": 51,
-                        "link_id": 2,
+                        "link_id": 4,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -316,7 +316,7 @@
                         "adapter_number": 1,
                         "description": "connected to P1 on port FastEthernet1/0",
                         "id": 52,
-                        "link_id": 3,
+                        "link_id": 1,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -401,7 +401,7 @@
                         "adapter_number": 1,
                         "description": "connected to P1 on port FastEthernet1/1",
                         "id": 1,
-                        "link_id": 4,
+                        "link_id": 2,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -419,7 +419,7 @@
                         "adapter_number": 2,
                         "description": "connected to ASBR5 on port FastEthernet1/0",
                         "id": 3,
-                        "link_id": 12,
+                        "link_id": 9,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -496,7 +496,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE1 on port FastEthernet1/1",
                         "id": 39,
-                        "link_id": 3,
+                        "link_id": 1,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -505,7 +505,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR3 on port FastEthernet1/0",
                         "id": 40,
-                        "link_id": 4,
+                        "link_id": 2,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -514,7 +514,7 @@
                         "adapter_number": 2,
                         "description": "connected to P2 on port FastEthernet2/0",
                         "id": 41,
-                        "link_id": 10,
+                        "link_id": 12,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -523,7 +523,7 @@
                         "adapter_number": 2,
                         "description": "connected to RR1 on port FastEthernet1/0",
                         "id": 42,
-                        "link_id": 20,
+                        "link_id": 18,
                         "name": "FastEthernet2/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -711,7 +711,7 @@
                         "adapter_number": 1,
                         "description": "connected to P2 on port FastEthernet1/0",
                         "id": 58,
-                        "link_id": 11,
+                        "link_id": 13,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -796,7 +796,7 @@
                         "adapter_number": 1,
                         "description": "connected to P2 on port FastEthernet1/1",
                         "id": 7,
-                        "link_id": 9,
+                        "link_id": 11,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -814,7 +814,7 @@
                         "adapter_number": 2,
                         "description": "connected to ASBR6 on port FastEthernet1/0",
                         "id": 9,
-                        "link_id": 14,
+                        "link_id": 16,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -890,7 +890,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE2 on port FastEthernet1/1",
                         "id": 45,
-                        "link_id": 11,
+                        "link_id": 13,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -899,7 +899,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR4 on port FastEthernet1/0",
                         "id": 46,
-                        "link_id": 9,
+                        "link_id": 11,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -908,7 +908,7 @@
                         "adapter_number": 2,
                         "description": "connected to P1 on port FastEthernet2/0",
                         "id": 47,
-                        "link_id": 10,
+                        "link_id": 12,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -984,7 +984,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR3 on port FastEthernet2/0",
                         "id": 13,
-                        "link_id": 12,
+                        "link_id": 9,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -993,7 +993,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE7 on port FastEthernet1/0",
                         "id": 14,
-                        "link_id": 13,
+                        "link_id": 10,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1011,7 +1011,7 @@
                         "adapter_number": 2,
                         "description": "connected to ASBR6 on port FastEthernet1/1",
                         "id": 16,
-                        "link_id": 15,
+                        "link_id": 17,
                         "name": "FastEthernet2/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1081,7 +1081,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR5 on port FastEthernet1/1",
                         "id": 63,
-                        "link_id": 13,
+                        "link_id": 10,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1090,7 +1090,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE8 on port FastEthernet1/1",
                         "id": 64,
-                        "link_id": 16,
+                        "link_id": 19,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1099,7 +1099,7 @@
                         "adapter_number": 2,
                         "description": "connected to CE3 on port FastEthernet1/0",
                         "id": 65,
-                        "link_id": 18,
+                        "link_id": 14,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1168,7 +1168,7 @@
                     {
                         "description": "connected to CE3 on port FastEthernet2/0",
                         "id": 85,
-                        "link_id": 19,
+                        "link_id": 15,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -1206,7 +1206,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR4 on port FastEthernet2/0",
                         "id": 19,
-                        "link_id": 14,
+                        "link_id": 16,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1215,7 +1215,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR5 on port FastEthernet2/1",
                         "id": 20,
-                        "link_id": 15,
+                        "link_id": 17,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1224,7 +1224,7 @@
                         "adapter_number": 2,
                         "description": "connected to PE8 on port FastEthernet1/0",
                         "id": 21,
-                        "link_id": 17,
+                        "link_id": 20,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1300,7 +1300,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE7 on port FastEthernet2/0",
                         "id": 33,
-                        "link_id": 18,
+                        "link_id": 14,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1315,7 +1315,7 @@
                         "adapter_number": 2,
                         "description": "connected to SW3 on port 1",
                         "id": 35,
-                        "link_id": 19,
+                        "link_id": 15,
                         "name": "FastEthernet2/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1391,7 +1391,7 @@
                         "adapter_number": 1,
                         "description": "connected to ASBR6 on port FastEthernet2/0",
                         "id": 69,
-                        "link_id": 17,
+                        "link_id": 20,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1400,7 +1400,7 @@
                         "adapter_number": 1,
                         "description": "connected to PE7 on port FastEthernet1/1",
                         "id": 70,
-                        "link_id": 16,
+                        "link_id": 19,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1482,7 +1482,7 @@
                         "adapter_number": 1,
                         "description": "connected to P1 on port FastEthernet2/1",
                         "id": 75,
-                        "link_id": 20,
+                        "link_id": 18,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
